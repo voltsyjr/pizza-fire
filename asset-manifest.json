@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/pizza-fire/static/css/main.92412158.css",
+    "main.js": "/pizza-fire/static/js/main.49f86cf3.js",
+    "static/js/787.9c33fcbd.chunk.js": "/pizza-fire/static/js/787.9c33fcbd.chunk.js",
+    "index.html": "/pizza-fire/index.html",
+    "main.92412158.css.map": "/pizza-fire/static/css/main.92412158.css.map",
+    "main.49f86cf3.js.map": "/pizza-fire/static/js/main.49f86cf3.js.map",
+    "787.9c33fcbd.chunk.js.map": "/pizza-fire/static/js/787.9c33fcbd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92412158.css",
+    "static/js/main.49f86cf3.js"
+  ]
+}
