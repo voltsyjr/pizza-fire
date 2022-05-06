@@ -1,13 +1,177 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: radial-gradient(circle, rgba(100, 0, 123, 1) 0%, rgba(62, 20, 86, 1) 100%);
+    overflow: hidden;
+    color: #fff;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.header {
+    margin: 10px 20px;
+    display: flex;
+}
+
+.header .homeicon {
+    font-size: 80px;
+    color: rgb(208, 211, 213);
+}
+
+.header .headerContent {
+    width: 100%;
+    border-bottom: 1px solid rgb(144, 14, 146);
+    display: flex;
+    align-items: flex-end;
+    margin-left: 20px;
+}
+
+.header .headerContent h2 {
+    margin-bottom: 5px !important;
+    text-align: left;
+    margin-left: 20px;
+    color: aliceblue;
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* home page styling  */
+
+.homepage,
+.Container {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* align-items: center; */
+}
+
+.homepage h1 {
+    color: aliceblue;
+    font-weight: 400;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.homepage button {
+    background-color: transparent;
+    color: aliceblue;
+    outline: none;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: 3px solid rgb(253, 194, 255);
+    font-size: 24px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+/* Base page styling */
+
+.Container h2 {
+    color: aliceblue;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.Container ul li.cur {
+    color: whitesmoke;
+    padding: 7px;
+    font-family: 'Courier New', Courier, monospace;
+    cursor: pointer;
+}
+
+.Container ul li {
+    color: whitesmoke;
+    padding: 7px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.Container ul li span {
+    display: none;
+}
+
+.Container ul li.active span {
+    display: inline;
+}
+
+.Container .basebtn {
+    background-color: transparent;
+    color: rgb(205, 208, 210);
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: 1px solid rgb(253, 194, 255);
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.Container p {
+    color: rgb(202, 203, 204);
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.modal {
+    /* display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal p {
+    color: #444;
+    font-weight: bold;
+}
+
+.modal button {
+    /* background-color: transparent; */
+    /* color: rgb(205, 208, 210); */
+    outline: none;
+    padding: 5px 20px;
+    border-radius: 30px;
+    border: 1px solid rgb(253, 194, 255);
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    color: #444;
+    border-color: #444;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.loader {
+    width: 10px;
+    height: 10px;
+    margin: 70px auto;
+    border-radius: 50%;
+    background: #fff;
 }
